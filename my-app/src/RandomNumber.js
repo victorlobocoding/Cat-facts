@@ -23,6 +23,6 @@ export const RandomCatFact = ({ catData }) => {
       >
         Grab Fact
       </button>
-    </>
+         </>
   );
 };
