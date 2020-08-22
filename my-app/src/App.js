@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import { RandomCatFact } from "./RandomNumber";
 import { FactList } from "./FactList";
+import { Comments } from "./Comments";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export const App = () => {
@@ -38,7 +39,7 @@ export const App = () => {
               {catData && <FactList catData={catData} />}
             </Route>
             <Route path="/comments">
-              <div>comments</div>
+              <Comments />
             </Route>
           </Switch>
         </div>
